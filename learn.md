@@ -4,9 +4,10 @@
 
 You’ve seen many different HTML form elements before.
 
-We have <input>, <select>, and <textarea>, for example. These elements manage their own state in the browser, and once you submit a regular <form>, the browser makes a request and generally navigates to a new page. In React, we often want to intercept this process, so we can do something with the values (validation, transforming the data before submitting it, etc.) and if necessary send a request to the server. The way we can do this, is by controlling the form components.
+  We have <input>, <select>, and <textarea>, for example. These elements manage their own state in the browser, and once you submit a regular <form>, the browser makes a request and generally navigates to a new page. In React, we often want to intercept this process, so we can do something with the values (validation, transforming the data before submitting it, etc.) and if necessary send a request to the server. The way we can do this, is by controlling the form components.
 
 ## Controlled vs. Uncontrolled Components
+
 If you don’t do anything, the input/select/textarea elements are uncontrolled. 
 
 They manage their own internal state. To control these components, we move the responsibility of managing the state of these elements to React. To do this, we have to create some state to keep track of the value and provide the value as a prop to the element. We also have to create a change handler function to update the state when the user interacts with the element. 
@@ -15,24 +16,24 @@ Forms have several events connected with them. The most important ones are the c
 
 ### Here is an example of a simple controlled form where the user can enter some text.
 
-              export const ControlledInputForm = () => {
-                  const [inputValue, setInputValue] = useState('');
+                    export const ControlledInputForm = () => {
+                        const [inputValue, setInputValue] = useState('');
 
-                  const handleChange = (event) => {
-                      setInputValue(event.target.value);
-                  }
+                        const handleChange = (event) => {
+                            setInputValue(event.target.value);
+                        }
 
-                  const handleSubmit = (event) => {
-                      event.preventDefault();
-                      console.log(event);
-                  };
-                  return (
-                      <form onSubmit={handleSubmit}>
-                          <input type="text" value={inputValue} onChange={handleChange}/>
-                          <button type="submit" >Submit</button>
-                      </form>
-                      );
-              };
+                        const handleSubmit = (event) => {
+                            event.preventDefault();
+                            console.log(event);
+                        };
+                        return (
+                            <form onSubmit={handleSubmit}>
+                                <input type="text" value={inputValue} onChange={handleChange}/>
+                                <button type="submit" >Submit</button>
+                            </form>
+                            );
+                    };
 
   The component above returns a form. This form has a single input element (line 15) and a submit button (line 16). The input element accepts a value prop and an onChange handler, which turn this into a controlled input. The form itself has an onSubmit handler, which makes the form as a whole controlled. 
 
