@@ -65,6 +65,16 @@ where the empty array is the initial value. The other pieces of state can have a
   
 - Now, we are ready to create our form. Beneath the first <h1>, add a <form>. Inside it, add a textarea and an input. Set the value attribute of the textarea to {quote}.
 
-  
+- Also add an onChange attribute, which you can assign to an inline arrow function which takes the event and calls setQuote with the event.target.value as argument.
+
+- Set the value attribute of the input element to {name}, and add the onChange handler which calls setName.
+
+- Add a button with a type of “submit” and a text of Add Quote. Now we need to write a submit handler, you can call this onSubmit, but we like to name it addQuote, because that is exactly what it should be doing. We write this outside of the JSX.
+
+It is again a function that receives an event. In this case we first need to call event.preventDefault(), because the default behavior of a <form> is to send a request to the server and reload the page. After preventing this default behavior, call setQuotes and add an object at the beginning of the quotes array containing quote and name.
+
+You don’t need to grab these from the event, because we have kept our local state in sync with the change handlers we wrote in the previous step.
+
+- After adding the quote to the list, also reset the quote and name states so the form is emptied out.
   
   
