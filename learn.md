@@ -41,7 +41,7 @@ Forms have several events connected with them. The most important ones are the c
   
   Granted, this looks much more complicated than a straight up HTML form, but it allows us to do some advanced things. We can check the validity of certain values or combinations of values, or we can transform the data and make our own custom request, saving the data to a database in our backend. 
 
-## Exercise: Creating a Form
+## EXERCISE: Creating a Form
   
 After this exercise, you will understand how to create a form in React.  
 
@@ -76,5 +76,33 @@ It is again a function that receives an event. In this case we first need to cal
 You don’t need to grab these from the event, because we have kept our local state in sync with the change handlers we wrote in the previous step.
 
 - After adding the quote to the list, also reset the quote and name states so the form is emptied out.
+  
+- You can now test part of the functionality. Open the webpage, and then view the React DevTools. Click on the App component, and see if you can find the quotes state. Enter a new quote in the form and add a name, see if it indeed appears in the state you see in the DevTools.
+
+- Now we just need to show our quotes on the page. We have provided a snarky quote in the starter files. If you want, you can move this to the initial state of the quote, otherwise just remove it while keeping the JSX tags where the quote is displayed.
+
+- Map over the quotes state and for each quote create a div with className “quote”. Put the quote.quote and the quote.name in the right place.
+
+- Test this out while having the dev console open. You should now see the quotes appear on the page.
+
+You may be reminded to put a key prop on each list item. You can use quote.quote for that. 
+  
+[SOLUTION](https://qag99.online/school/hvtrs8%2F-gktju%60.aoo%2FUilcCccdgm%7B%2Fde%2Frgaat%2Fafvcnaef%2Fvrge-mcil%2Fgxgraiqe%2Ffmros-smlwtkol)
+  
+## Grow
+
+Nothing beats experience. Try building some other forms that use different form elements, like checkboxes, or radio buttons, or select dropdowns. Alternatively, you may want to check out some of the mentioned libraries in the next section and see if you can rewrite the form we built in this exercise using one of those.
+
+## Resources
+
+[Documantation](https://qag99.online/school/hvtrs8%2F-rgaaths%2Copg-dmcq%2Fdopmq.jtol!gctqb%7B-doauq-urcprep)
+  
+## Form Libraries
+  
+As you have experienced, creating forms with React can be quite cumbersome.
+
+For a simple form, this is not such a big problem, but if your site has a lot of different forms, this can result in lots of boilerplate code you have to write. Boilerplate code is code that has a similar structure for each small part of the problem you are trying to solve, with lots of repetition. To alleviate these kinds of situations, there are several libraries that can help you build forms. They all provide an abstraction that reduces the amount of code you have to write yourself. 
+  
+  
   
   
