@@ -103,6 +103,26 @@ As you have experienced, creating forms with React can be quite cumbersome.
 
 For a simple form, this is not such a big problem, but if your site has a lot of different forms, this can result in lots of boilerplate code you have to write. Boilerplate code is code that has a similar structure for each small part of the problem you are trying to solve, with lots of repetition. To alleviate these kinds of situations, there are several libraries that can help you build forms. They all provide an abstraction that reduces the amount of code you have to write yourself. 
   
+Some of the most popular form libraries are **Formik**, **React Hook Form**, and **RJSF**. Each of these has slightly different strengths and weaknesses.
+
+## Formik
   
+Formik takes care of a lot of things behind the scenes: it hooks up change handlers automatically and provides easy ways to do all kinds of validation of the data. It also helps with conditional fields or options.
+  
+## React Hook Form
+  
+React Hook Form is more lightweight than Formik, and leverages native HTML elements to a high extent. It is quickly becoming the most popular form library. 
+  
+## RJSF
+  
+RJSF (React-jsonschema-form) is a library that can build forms based on some JSON, this allows you to dynamically create forms based on a schema generated on the server, for example. Have a look at their respective websites / github repos to get a feel for how they work.
+  
+## RESOURCES 
+  
+[Formik](https://formik.org/)
+
+[React Hook Form](https://www.react-hook-form.com/)
+  
+[RJSF](https://react-jsonschema-form.readthedocs.io/en/)
   
   
