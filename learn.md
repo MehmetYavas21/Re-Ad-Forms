@@ -49,7 +49,7 @@ After this exercise, you will understand how to create a form in React.
 
 Let’s build a form where the user can enter some data. Instead of having the default browser behavior, we append the data to the page, so we can immediately see it.
 
-Download [this](https://qag99.online/school/hvtrs8%2F-gktju%60.aoo%2FUilcCccdgm%7B%2Fde%2Frgaat%2Fafvcnaef%2Fvrge-mcil%2Fgxgraiqe%2Ffmros-svaptgr) folder and install the dependencies before running the dev server with `npm run dev`. Our app will show some famous quotes and allow the user to add to this list. We will be working in App.jsx, so open that file.
+Download [this](https://github.com/WincAcademy/fe-react-advanced/tree/main/exercise-forms/starter) folder and install the dependencies before running the dev server with `npm run dev`. Our app will show some famous quotes and allow the user to add to this list. We will be working in App.jsx, so open that file.
 
 ## Steps
 
@@ -87,7 +87,7 @@ You don’t need to grab these from the event, because we have kept our local st
 
 You may be reminded to put a key prop on each list item. You can use quote.quote for that. 
   
-[SOLUTION](https://qag99.online/school/hvtrs8%2F-gktju%60.aoo%2FUilcCccdgm%7B%2Fde%2Frgaat%2Fafvcnaef%2Fvrge-mcil%2Fgxgraiqe%2Ffmros-smlwtkol)
+[SOLUTION](https://github.com/WincAcademy/fe-react-advanced/tree/main/exercise-forms/solution)
   
 ## Grow
 
@@ -95,7 +95,7 @@ Nothing beats experience. Try building some other forms that use different form 
 
 ## Resources
 
-[Documantation](https://qag99.online/school/hvtrs8%2F-rgaaths%2Copg-dmcq%2Fdopmq.jtol!gctqb%7B-doauq-urcprep)
+[Documantation](https://reactjs.org/docs/forms.html#gatsby-focus-wrapper)
   
 ## Form Libraries
   
